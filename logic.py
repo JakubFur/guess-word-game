@@ -17,11 +17,14 @@ def guess_the_word():
         temp_answer = checking_word(word_list, answer)
         if len(right_answer) < len(temp_answer):
             right_answer = temp_answer.lower()
-        if word_list == answer:
-            print('Udało się zgadnąć odpowiedź! Wykorzystano prób:')
-            break
+            print("Prawidłowy początek: " + right_answer + "...")
+            print("Pozostało " + str(15-count) + " prób.")
+
+            if word_list == answer:
+                print('Udało się zgadnąć odpowiedź! Wykorzystano prób:')
+                break
         elif (len(right_answer) != 0):
-            print("Prawidłowy początek: " + right_answer)
+            print("Prawidłowy początek: " + right_answer + "...")
             print("Pozostało " + str(15-count) + " prób.")
         else:
             print("Niestety nie... Pozostało " + str(15-count) + " prób.")
@@ -42,6 +45,14 @@ def checking_word(inputed, answer):
             break
     correct = correct
     return correct
+
+@staticmethod
+def next_char(correct):
+    # odpowiedź użytkownika "right answer" sprawdza długość posiadaną i bierze
+    # kolejny znak z answer i sprawdza w asci, czy wypisać
+    # "v" jako znak niżej, czy "^" jako kolejny znak jest wyżej.
+    return 0
+
 
 @staticmethod
 def draw_a_word():
