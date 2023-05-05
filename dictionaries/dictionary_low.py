@@ -1,0 +1,1 @@
+dictionary_low = ['arbuz', 'kokaina', 'kurczak', 'nigger', 'SEO', 'murzyn', 'emedia', 'sranie', 'wino', 'roleta']
