@@ -34,6 +34,8 @@ def guess_the_word():
 
 @staticmethod
 def checking_word(inputed, answer):
+    str(inputed).lower()
+    str(answer).lower()
     correct = ''
     i = 0
     for x in inputed:
@@ -63,4 +65,9 @@ def draw_a_word():
 
 @staticmethod
 def cut_word():
+    return 0
+
+
+@staticmethod
+def che():
     return 0

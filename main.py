@@ -21,5 +21,5 @@ while (game != 3):
     elif game == '3':
         break
     else:
-        print('Nieprawidłowa wartość wyboru. Chuj.')
+        print('Nieprawidłowa wartość wyboru.')
         print()
